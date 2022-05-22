@@ -32,6 +32,8 @@ class Enemy(pygame.sprite.Sprite):
 class Goblin_brute(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, goblin_brutes)
         self.positionX = positionX
         self.positionY = positionY
@@ -57,6 +59,8 @@ class Goblin_brute(Enemy):
 class Rock_dude(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, rock_monsters)
         self.positionX = positionX
         self.positionY = positionY
@@ -70,6 +74,8 @@ class Rock_dude(Enemy):
 class Goblin_dude(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, goblins)
         self.positionX = positionX
         self.positionY = positionY
@@ -85,6 +91,8 @@ class Goblin_dude(Enemy):
 class Spike_dude(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, spike_monsters)
         self.positionX = positionX
         self.positionY = positionY
@@ -102,6 +110,8 @@ class Spike_dude(Enemy):
 class Small_spike_dude(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, small_spike_monsters)
         self.positionX = positionX
         self.positionY = positionY
@@ -119,6 +129,8 @@ class Small_spike_dude(Enemy):
 class Killer(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, killers)
         self.positionX = positionX
         self.positionY = positionY
@@ -132,6 +144,8 @@ class Killer(Enemy):
 class Lizard(Enemy):
     def __init__(self, positionX, positionY):
         super().__init__()
+        test.assertEqual(isinstance(positionX, int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(positionY, int), True, "positionY has to be an integer")
         pygame.sprite.Sprite.__init__(self, lizards)
         self.positionX = positionX
         self.positionY = positionY
