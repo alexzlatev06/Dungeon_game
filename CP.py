@@ -4,6 +4,8 @@ import pygame
 class Player(pygame.sprite.Sprite):
     def __init__(self, player_x, player_y):
         super().__init__()
+        test.assertEqual(isinstance(player_x, int), True, "player_x has to be an integer")
+        test.assertEqual(isinstance(player_y, int), True, "player_y has to be an integer")
         self.playerX = player_x
         self.playerY = player_y
         self.health = 3
