@@ -11,6 +11,8 @@ from levels import *
 class Tile(pygame.sprite.Sprite):
     def __init__(self, position, tile_type):
         super().__init__()
+        test.assertEqual(isinstance(position[0], int), True, "positionX has to be an integer")
+        test.assertEqual(isinstance(position[1], int), True, "positionY has to be an integer")
         self.image = pygame.image.load(tile_type)
         self.rect = self.image.get_rect(topleft=position)
         self.width = 0
